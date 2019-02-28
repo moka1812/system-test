@@ -1,0 +1,8 @@
+- hosts: production
+  gather_facts: yes
+  pre_tasks:
+    - name: 'install python'
+      raw: sudo apt-get install python
+  roles:
+    - createAccount 
+ 
