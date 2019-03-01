@@ -1,2 +1,14 @@
 ---
 # tasks file for updateDNS
+
+
+- name: "Update DNS record in hosts"
+  lineinfile:   
+    dest: /etc/hosts 
+    regexp: '.*{{ item.ip_address }}$'
+    line: "{{ item.ip_address }} {{ item.hostname }}"
+    state: present
+    backup: yes
+  when: item.ip_address is defined
+  with_items: 
+   - "{{ hosts }}"
