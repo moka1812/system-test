@@ -4,5 +4,6 @@
     - name: 'install python'
       raw: sudo apt-get install python
   roles:
-    - updateDNS
+    - phpmyadmin
+
  

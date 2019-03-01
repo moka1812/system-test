@@ -1,0 +1,4 @@
+---
+# handlers file for phpmyadmin
+
+- include: ../../nginx/handlers/main.yml

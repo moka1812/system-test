@@ -6,4 +6,7 @@ clitools:
   - lsof
   - tcpstat
   - tcpdump
-
+  - curl
+  - git
+  - bash-completion
+  - vim

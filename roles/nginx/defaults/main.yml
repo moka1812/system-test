@@ -1,0 +1,6 @@
+---
+# defaults file for nginx
+
+domain: foo.bar.com
+username: sysadmin
+nginx_worker_processes: 4

@@ -1,0 +1,6 @@
+---
+# defaults file for phpmyadmin
+username: sysadmin
+include: ../../nginx/defaults/main.yml
+phpmyadmin_repo: https://github.com/phpmyadmin/phpmyadmin.git
+phpmyadmin_domain_name: phpmyadmin.app
