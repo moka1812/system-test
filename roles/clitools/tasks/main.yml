@@ -1,0 +1,9 @@
+---
+# tasks file for clitools
+
+- name: Install cli tool
+  apt:
+    name: "{{ item }}"
+    update_cache: true
+    state: present
+  with_items: "{{ clitools }}"
